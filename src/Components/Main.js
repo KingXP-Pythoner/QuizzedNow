@@ -89,11 +89,11 @@ export default function Main({start, resetQuiz, checked, theme}) {
        }
 
 
-const quizElements = apiData.map(arr => {
+const quizElements = apiData.map((arr, index) => {
   return (
     <div key={nanoid()} className="tile">
     <Questions
-    title={arr.question}
+    title={(index+1) + ". " + arr.question}
     />
     <QuestionAnswers 
     allAnswers={arr.options} 
