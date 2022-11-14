@@ -8,7 +8,7 @@ export default function AppCover (props){
         <div className={darkMode === false? "AppCover":"AppCover-dark"}>
         <div className={darkMode === false? "cover-container":"cover-container-dark"}>
         <img src={darkMode === false? logo:logo2} alt="logoimg"/>
-        <h1>Quizzed Now</h1>
+        <h1>Quizzed Now!</h1>
         <h5>Are you going to be the next Champion?</h5>
         <button className={darkMode === false? "cover-btn":"cover-btn-dark"} onClick={props.startBtn}>START QUIZ</button>
         </div>
